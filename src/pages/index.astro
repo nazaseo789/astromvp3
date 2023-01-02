@@ -9,9 +9,9 @@ interface MarkdownFrontmatter {
   date: number;
 }
 
-const title = 'MVPZERO เว็บพนันออนไลน์เว็บตรง สมัครรับโปรโมชั่นจุกๆได้ที่นี่';
-const description = 'สมัครวันนี้รับไปเลย ฝาก100 รับ 150 กับสมาชิกหน้าใหม่';
-const seoDescription = 'เล่นกับเว็บพนันออนไลน์ที่ดีสุด ราคาน้ำเริ่ดสุดและคุ้มค่า รับทั้งวอเลทและธนาคารต้องที่นี่เลย';
+const title = 'MVPJET เว็บพนันออนไลน์เว็บตรงไม่ผ่านเอเย่นต์ โปรโมชั่นคุ้มค่ากว่าที่อื่น';
+const description = 'สมัครตอนนี้รับทันที ฝาก100 รับ 150 หรือเอาแก้วเก็บความเย็นก็ได้';
+const seoDescription = 'เล่นกับเว็บพนันออนไลน์ที่ดีสุด ราคาน้ำแรง รับทั้งวอเลทและธนาคารต้องมาจัดที่นี่เลย';
 
 const allPosts = await Astro.glob<MarkdownFrontmatter>('./posts/*.md');
 const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
@@ -20,8 +20,7 @@ const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valu
 <html lang="en">
 
 <head>
-  <meta name="google-site-verification" content="DdEgye0t2Tti9nJ6Fwq7q3NR_zpsdq5FfBW_72YqY7Q" />
-  <meta name="google-site-verification" content="ii-nK78Ay8s-VyYSKAA5khRuHqG98bfCWnVo27Z7WlA" />
+  
   <BaseHead title={title} description={seoDescription} />
 </head>
 
