@@ -21,6 +21,7 @@
     "@astrojs/sitemap": "^1.0.0",
     "autoprefixer": "^10.4.13",
     "dayjs": "^1.11.7",
+    "genrate": "^0.0.9",
     "lunr": "^2.3.9",
     "next-seo": "^5.15.0",
     "sitemap": "^7.1.1"
