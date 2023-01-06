@@ -12,7 +12,6 @@ interface MarkdownFrontmatter {
 const title = 'MVPJET เว็บพนันออนไลน์เว็บตรงไม่ผ่านเอเย่นต์ โปรโมชั่นคุ้มค่ากว่าที่อื่น';
 const description = 'สมัครตอนนี้รับทันที ฝาก100 รับ 150 หรือเอาแก้วเก็บความเย็นก็ได้';
 const seoDescription = 'เล่นกับเว็บพนันออนไลน์ที่ดีสุด ราคาน้ำแรง รับทั้งวอเลทและธนาคารต้องมาจัดที่นี่เลย';
-const meta name="keyword" content= 'สมัครสล็อตxo ,สมัครslotxo ,สมัครเว็บตรง';
 const allPosts = await Astro.glob<MarkdownFrontmatter>('./posts/*.md');
 const sortedPosts = allPosts.sort((a, b) => new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf());
 ---
